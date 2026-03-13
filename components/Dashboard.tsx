@@ -149,6 +149,67 @@ export default function Dashboard({ tr }: Props) {
               </div>
             </div>
           </div>
+
+          {/* Telegram Alert Example */}
+          <div className="border-t border-white/10 px-5 py-5">
+            <p className="text-xs uppercase tracking-widest text-slate-500 mb-4">Telegram Alert · приклад сповіщення</p>
+            <div className="max-w-md mx-auto bg-[#17212b] rounded-2xl overflow-hidden shadow-2xl border border-white/5">
+              {/* TG header */}
+              <div className="flex items-center gap-3 px-4 py-3 bg-[#1c2733] border-b border-white/5">
+                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">N</div>
+                <div>
+                  <div className="text-white text-sm font-semibold">Netpeak Aura</div>
+                  <div className="text-slate-400 text-xs">bot</div>
+                </div>
+                <div className="ml-auto flex items-center gap-1.5">
+                  <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                  <span className="text-green-400 text-xs">online</span>
+                </div>
+              </div>
+
+              {/* TG message bubble */}
+              <div className="p-4">
+                <div className="bg-[#1c2733] rounded-xl rounded-tl-sm p-3.5 text-sm space-y-1.5">
+                  <div className="text-white font-semibold">🔴 Kievs · /Netpeak</div>
+                  <div className="text-slate-300 text-xs space-y-0.5">
+                    <div>📋 <span className="text-slate-400">Risk category:</span> S Trust / Competence</div>
+                    <div>👤 <span className="text-slate-400">PM –</span> Maksym (Catalyst)</div>
+                  </div>
+                  <div className="border-t border-white/10 pt-1.5 text-xs text-slate-400">
+                    📅 Дата повідомлення: <span className="text-white">04.03.2026 19:05</span>
+                  </div>
+                  <div className="text-xs">
+                    <div className="text-slate-400 font-medium mb-1">💬 Текст повідомлення:</div>
+                    <div className="text-slate-300 bg-white/5 rounded-lg p-2 leading-relaxed">
+                      "Доброго вечора<br/>
+                      Чому Ваш бюджет постійно збільшується при 50% нецільових дзвінків????<br/>
+                      Чим Ви керуєтесь???"
+                    </div>
+                  </div>
+                  <div className="border-t border-white/10 pt-1.5 text-xs">
+                    <div className="flex items-start gap-1.5">
+                      <span>🧠</span>
+                      <div>
+                        <span className="text-orange-400 font-medium">Aura:</span>
+                        <span className="text-slate-300"> Клієнт висловлює сильне невдоволення. Ризик втрати довіри.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-between pt-1 border-t border-white/10">
+                    <div className="text-xs">
+                      <span className="text-slate-400">📊 Sentiment: </span>
+                      <span className="text-red-400 font-bold">20/100</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs">
+                      <span className="text-brand-400 underline cursor-pointer">🔗 Open Chat</span>
+                      <span className="text-slate-400">👋 @dmytro_ho</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-right text-[10px] text-slate-600 mt-1">19:05</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

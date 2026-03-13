@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { type Locale } from "@/lib/i18n";
 
 interface Props {
@@ -25,13 +26,8 @@ export default function Navbar({ tr, locale, setLocale }: Props) {
     >
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center">
-            <span className="text-white font-bold text-sm">A</span>
-          </div>
-          <span className="font-semibold text-white">
-            Netpeak <span className="text-brand-500">Aura</span>
-          </span>
+        <div className="flex items-center">
+          <Image src="/logo.png" alt="Netpeak Aura" width={120} height={40} className="h-9 w-auto object-contain" priority />
         </div>
 
         {/* Links */}
