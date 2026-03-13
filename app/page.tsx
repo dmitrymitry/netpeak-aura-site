@@ -7,6 +7,7 @@ import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import Risks from "@/components/Risks";
 import Features from "@/components/Features";
+import Dashboard from "@/components/Dashboard";
 import ForWho from "@/components/ForWho";
 import NPS from "@/components/NPS";
 import Case from "@/components/Case";
@@ -27,6 +28,7 @@ export default function Home() {
       <Solution tr={tr} />
       <Risks tr={tr} />
       <Features tr={tr} />
+      <Dashboard tr={tr} />
       <NPS tr={tr} />
       <Case tr={tr} />
       <Roadmap tr={tr} />

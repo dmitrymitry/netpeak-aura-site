@@ -103,6 +103,10 @@
       }
     ]
   },
+  "dashboard": {
+    "title": "Aura Dashboard Example",
+    "subtitle": "This is what your project health map looks like in real time."
+  },
   "forwho": {
     "title": "Who is Aura for",
     "subtitle": "Built for leaders of service businesses who need visibility into the quality of client communications.",
