@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "product": "Product",
+    "features": "Features",
+    "roadmap": "Roadmap",
+    "demo": "Request demo"
+  },
+  "hero": {
+    "badge": "AI platform for service teams",
+    "title": "AI system for managing client communications",
+    "subtitle": "Netpeak Aura automatically analyzes client communications and detects tactical and strategic risks in service operations.",
+    "cta_demo": "Request demo",
+    "cta_learn": "Learn more",
+    "badges": [
+      "24/7 communication analysis",
+      "Early risk detection",
+      "Sentiment monitoring",
+      "Response time tracking"
+    ]
+  },
+  "problem": {
+    "title": "Why service companies lose control over client communications",
+    "subtitle": "As your business grows, communication chaos becomes unmanageable without automation.",
+    "stats": [
+      { "value": "100+", "label": "client chats simultaneously" },
+      { "value": "5000+", "label": "messages per day" },
+      { "value": "0%", "label": "visibility for managers" }
+    ],
+    "items": [
+      { "icon": "eye-off", "text": "Managers don't see the dialogs" },
+      { "icon": "clock", "text": "Information arrives too late" },
+      { "icon": "alert", "text": "Reaction only to escalations" }
+    ]
+  },
+  "solution": {
+    "title": "How Netpeak Aura works",
+    "subtitle": "AI transforms the message flow into a project risk map.",
+    "steps": [
+      { "num": "01", "title": "Connect channels", "desc": "Aura integrates with Telegram, Slack, Email and other communication channels." },
+      { "num": "02", "title": "Analyze communications", "desc": "AI analyzes sentiment, response time and commitment tracking." },
+      { "num": "03", "title": "Detect risks", "desc": "The system automatically identifies tactical and strategic risks." },
+      { "num": "04", "title": "Insights for managers", "desc": "You get a dashboard with a health map of all your projects." }
+    ]
+  },
+  "risks": {
+    "title": "Two types of risks under control",
+    "tactical": {
+      "label": "Tactical",
+      "title": "Operational issues",
+      "items": ["Delayed responses", "Missing follow-ups", "Manager errors"]
+    },
+    "strategic": {
+      "label": "Strategic",
+      "title": "Client churn risks",
+      "items": ["Loss of client trust", "Dissatisfaction with results", "Conflict escalation"]
+    }
+  },
+  "features": {
+    "title": "Platform capabilities",
+    "subtitle": "7 modules for full control of service communications.",
+    "list": [
+      {
+        "icon": "shield",
+        "title": "Risk Management",
+        "desc": "Project Health Score, sentiment trend analysis, predictive churn model and risk playbook.",
+        "tag": "Core"
+      },
+      {
+        "icon": "bot",
+        "title": "PM Copilot",
+        "desc": "AI manager assistant: weekly digest, smart reminders and communication recommendations.",
+        "tag": "AI"
+      },
+      {
+        "icon": "chart",
+        "title": "Analytics & Insights",
+        "desc": "Project health dashboard, Communication Score PM and client pattern analytics.",
+        "tag": "Data"
+      },
+      {
+        "icon": "graduation",
+        "title": "Learning & Development",
+        "desc": "Client Communication Profile, work style recommendations and best practices library.",
+        "tag": "Growth"
+      },
+      {
+        "icon": "rocket",
+        "title": "Onboarding",
+        "desc": "Monitoring first 30 days of a project, onboarding checklist and client profile.",
+        "tag": "Start"
+      },
+      {
+        "icon": "trending",
+        "title": "Revenue Growth",
+        "desc": "Cross-sell detection and opportunity report for identifying growth opportunities.",
+        "tag": "Revenue"
+      },
+      {
+        "icon": "zap",
+        "title": "Automation",
+        "desc": "Automatic NPS surveys, payment reminders and onboarding messages.",
+        "tag": "Auto"
+      }
+    ]
+  },
+  "forwho": {
+    "title": "Who is Aura for",
+    "subtitle": "Built for leaders of service businesses who need visibility into the quality of client communications.",
+    "roles_label": "Roles",
+    "companies_label": "Company types",
+    "quote": "\"Aura is for those who run a service business and want to see problems before the client does.\""
+  },
+  "nps": {
+    "title": "Automatic NPS surveys directly in chats",
+    "subtitle": "Aura sends NPS surveys to clients, collects responses and links them to communications.",
+    "items": [
+      "Automatic sending at the right moment",
+      "Aggregation and analysis of results",
+      "Connection with communication quality"
+    ]
+  },
+  "roadmap": {
+    "title": "Product Roadmap",
+    "subtitle": "Upcoming releases that will expand Aura's capabilities.",
+    "items": [
+      {
+        "quarter": "Q2 2025",
+        "title": "PM Digests",
+        "desc": "AI summaries for managers: at-risk clients, sentiment drops, overdue responses.",
+        "status": "coming"
+      },
+      {
+        "quarter": "Q3 2025",
+        "title": "Video Call Analysis",
+        "desc": "Transcription and sentiment analysis of Zoom, Google Meet and Teams calls.",
+        "status": "planned"
+      },
+      {
+        "quarter": "Q3 2025",
+        "title": "AI Recommendations for PM",
+        "desc": "Aura will suggest how to respond to clients and how to resolve conflicts.",
+        "status": "planned"
+      },
+      {
+        "quarter": "Q4 2025",
+        "title": "Full Communication Context",
+        "desc": "Unifying chats, email and calls into a single client profile.",
+        "status": "planned"
+      }
+    ]
+  },
+  "case": {
+    "title": "Aura already works at Netpeak",
+    "subtitle": "An internal tool that has proven its effectiveness.",
+    "stats": [
+      { "value": "250+", "label": "manager hours saved" },
+      { "value": "100%", "label": "automated communication analysis" },
+      { "value": "Early", "label": "risk detection before escalations" }
+    ]
+  },
+  "cta": {
+    "title": "See where risks appear in your client communications",
+    "subtitle": "Leave a request — we'll show how Aura works on real cases.",
+    "button": "Request demo"
+  },
+  "form": {
+    "title": "Request a demo",
+    "name": "Your name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message (optional)",
+    "submit": "Send request",
+    "submitting": "Sending...",
+    "success": "Thank you! We will contact you soon.",
+    "error": "Something went wrong. Please try again.",
+    "required": "Required field",
+    "invalid_email": "Enter a valid email"
+  },
+  "footer": {
+    "copy": "© 2025 Netpeak Aura. All rights reserved.",
+    "product": "A Netpeak Group product"
+  }
+}
