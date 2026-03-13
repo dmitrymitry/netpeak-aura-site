@@ -57,50 +57,27 @@
   },
   "features": {
     "title": "Platform capabilities",
-    "subtitle": "7 modules for full control of service communications.",
-    "list": [
-      {
-        "icon": "shield",
-        "title": "Risk Management",
-        "desc": "Project Health Score, sentiment trend analysis, predictive churn model and risk playbook.",
-        "tag": "Core"
-      },
-      {
-        "icon": "bot",
-        "title": "PM Copilot",
-        "desc": "AI manager assistant: weekly digest, smart reminders and communication recommendations.",
-        "tag": "AI"
-      },
-      {
-        "icon": "chart",
-        "title": "Analytics & Insights",
-        "desc": "Project health dashboard, Communication Score PM and client pattern analytics.",
-        "tag": "Data"
-      },
-      {
-        "icon": "graduation",
-        "title": "Learning & Development",
-        "desc": "Client Communication Profile, work style recommendations and best practices library.",
-        "tag": "Growth"
-      },
-      {
-        "icon": "rocket",
-        "title": "Onboarding",
-        "desc": "Monitoring first 30 days of a project, onboarding checklist and client profile.",
-        "tag": "Start"
-      },
-      {
-        "icon": "trending",
-        "title": "Revenue Growth",
-        "desc": "Cross-sell detection and opportunity report for identifying growth opportunities.",
-        "tag": "Revenue"
-      },
-      {
-        "icon": "zap",
-        "title": "Automation",
-        "desc": "Automatic NPS surveys, payment reminders and onboarding messages.",
-        "tag": "Auto"
-      }
+    "available_label": "Available now",
+    "coming_label": "Coming soon",
+    "coming_cta": "Want priority access to new modules?",
+    "coming_cta_btn": "Leave a request",
+    "core": {
+      "icon": "shield",
+      "title": "Risk Management",
+      "desc": "Full control over client relationship health in real time.",
+      "feats": [
+        { "title": "Project Health Score", "desc": "An integrated score for each project based on sentiment, response time and commitment tracking. From 0 to 100 — always know where things are burning." },
+        { "title": "Sentiment Trend Analysis", "desc": "A chart of client mood changes over a week, month or quarter. See degradation before the client writes 'we've decided to leave'." },
+        { "title": "Telegram Risk Alerts", "desc": "Instant Telegram notifications when a client shows signs of dissatisfaction, aggression or loss of trust. PM and manager are notified simultaneously." },
+        { "title": "Predictive Churn Model", "desc": "AI predicts the probability of client churn based on communication patterns. Gives you time for preventive action rather than firefighting." },
+        { "title": "Risk Playbook", "desc": "A recommended set of actions for each risk type — tactical or strategic. Not just a signal, but a clear next step." }
+      ]
+    },
+    "coming": [
+      { "icon": "🤖", "title": "PM Copilot", "desc": "AI digests, smart reminders and communication recommendations for each PM." },
+      { "icon": "📊", "title": "Analytics & Insights", "desc": "PM Communication Score, client pattern analytics and team comparisons." },
+      { "icon": "🚀", "title": "Onboarding Module", "desc": "Monitoring the first 30 days of a project and an automatic onboarding checklist." },
+      { "icon": "⚡", "title": "Automation", "desc": "Automatic NPS surveys, reminders and onboarding messages." }
     ]
   },
   "dashboard": {
@@ -249,24 +226,71 @@
   "cta": {
     "title": "See where risks appear in your client communications",
     "subtitle": "Leave a request — we'll show how Aura works on real cases.",
-    "button": "Request demo"
+    "button": "Request demo",
+    "secondary_btn": "Get a risk checklist",
+    "secondary_desc": "A PDF template for self-assessing communication risks in your team"
   },
   "form": {
-    "title": "Request a demo",
+    "title": "See Aura in action",
+    "subtitle": "No commitment — a 30-minute walkthrough on real cases from your niche.",
     "name": "Your name",
+    "name_placeholder": "e.g. Alex",
     "company": "Company",
-    "email": "Email",
+    "company_placeholder": "Agency or company name",
+    "email": "Work email",
+    "email_placeholder": "name@company.com",
     "phone": "Phone",
-    "message": "Message (optional)",
-    "submit": "Send request",
+    "phone_placeholder": "+1 ___ ___ ____",
+    "message": "What would you like to improve?",
+    "message_placeholder": "e.g. I want to see churn risks earlier",
+    "submit": "Book a demo →",
     "submitting": "Sending...",
-    "success": "Thank you! We will contact you soon.",
+    "success": "Thank you! We will get back to you within 1 business day.",
     "error": "Something went wrong. Please try again.",
     "required": "Required field",
-    "invalid_email": "Enter a valid email"
+    "invalid_email": "Enter a valid email",
+    "trust": [
+      "⏱ We respond within 1 business day",
+      "🔕 No spam — only useful information",
+      "🔒 Your data is protected and never shared"
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Answers to the most common questions before the demo.",
+    "items": [
+      {
+        "q": "How do I connect Telegram or Slack?",
+        "a": "Integration takes 15–30 minutes and requires no technical knowledge. You grant access to the relevant chats via a standard API or bot — Aura connects automatically. We guide you through the entire setup process."
+      },
+      {
+        "q": "Do you need access to all chats?",
+        "a": "No. You choose which chats to connect. Aura only analyzes the channels you have explicitly authorized. No hidden connections or monitoring without your knowledge."
+      },
+      {
+        "q": "How long does implementation take?",
+        "a": "Basic connection and setup takes 1 to 3 business days. You will see your first insights and alerts on the very first day after connecting your chats."
+      },
+      {
+        "q": "Who can see client data?",
+        "a": "Only those you grant access to. Aura has role-based access: managers see all projects, PMs see only their own. Client data is never shared with third parties and is never used to train AI models."
+      },
+      {
+        "q": "Is Aura suitable for a small team of 3–5 PMs?",
+        "a": "Yes. Aura scales from small teams to large groups. The Starter plan is designed specifically for companies just beginning to structure their client service. Many clients start with 3–5 PMs and grow with the platform."
+      },
+      {
+        "q": "What are tactical and strategic risks?",
+        "a": "Tactical risks are operational issues happening right now: late response, unfulfilled promise, incorrect tone. Strategic risks are signals of relationship degradation: loss of trust, chronic dissatisfaction, potential churn. Aura monitors both levels."
+      },
+      {
+        "q": "How do I measure the effect of implementation?",
+        "a": "We provide a baseline report before implementation and compare it with metrics at 30/60/90 days. Key metrics: number of escalations, average sentiment score, PM response time, number of prevented risks."
+      }
+    ]
   },
   "footer": {
-    "copy": "© 2025 Netpeak Aura. All rights reserved.",
+    "copy": "© 2026 Netpeak Aura. All rights reserved.",
     "product": "A Netpeak Group product"
   }
 }

@@ -14,6 +14,7 @@ import Case from "@/components/Case";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
 import Security from "@/components/Security";
+import FAQ from "@/components/FAQ";
 import Roadmap from "@/components/Roadmap";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -37,6 +38,7 @@ export default function Home() {
       <Testimonials tr={tr} />
       <Pricing tr={tr} />
       <Security tr={tr} />
+      <FAQ tr={tr} />
       <Roadmap tr={tr} />
       <CTA tr={tr} />
       <Footer tr={tr} />

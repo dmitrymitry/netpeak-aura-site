@@ -118,6 +118,15 @@ export default function LeadForm({ tr }: Props) {
       >
         {status === "loading" ? tr.form.submitting : tr.form.submit}
       </button>
+
+      {/* Trust signals */}
+      {tr.form.trust && (
+        <div className="space-y-1.5 pt-1">
+          {(tr.form.trust as string[]).map((line: string, i: number) => (
+            <p key={i} className="text-slate-500 text-xs text-center">{line}</p>
+          ))}
+        </div>
+      )}
     </form>
   );
 }
