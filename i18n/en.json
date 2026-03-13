@@ -125,42 +125,126 @@
   },
   "roadmap": {
     "title": "Product Roadmap",
-    "subtitle": "Upcoming releases that will expand Aura's capabilities.",
+    "subtitle": "What we are building and what is planned for 2026.",
     "items": [
       {
-        "quarter": "Q2 2025",
+        "quarter": "Q2 2026",
         "title": "PM Digests",
-        "desc": "AI summaries for managers: at-risk clients, sentiment drops, overdue responses.",
-        "status": "coming"
+        "desc": "AI summaries for managers: at-risk clients, sentiment drops, overdue responses — weekly report without extra meetings.",
+        "status": "dev"
       },
       {
-        "quarter": "Q3 2025",
+        "quarter": "Q3 2026",
+        "title": "AI Recommendations for PM",
+        "desc": "Aura suggests how to respond in a difficult client situation and how to prevent conflict — directly in the chat.",
+        "status": "planned"
+      },
+      {
+        "quarter": "Q3 2026",
         "title": "Video Call Analysis",
         "desc": "Transcription and sentiment analysis of Zoom, Google Meet and Teams calls.",
         "status": "planned"
       },
       {
-        "quarter": "Q3 2025",
-        "title": "AI Recommendations for PM",
-        "desc": "Aura will suggest how to respond to clients and how to resolve conflicts.",
-        "status": "planned"
-      },
-      {
-        "quarter": "Q4 2025",
+        "quarter": "Q4 2026",
         "title": "Full Communication Context",
-        "desc": "Unifying chats, email and calls into a single client profile.",
-        "status": "planned"
+        "desc": "One client profile: chats, email and calls in one place. A complete picture without switching between tools.",
+        "status": "research"
       }
     ]
   },
   "case": {
     "title": "Aura already works at Netpeak",
-    "subtitle": "An internal tool that has proven its effectiveness.",
+    "subtitle": "Results from 6 months of use in a real service business.",
     "stats": [
-      { "value": "250+", "label": "manager hours saved" },
-      { "value": "100%", "label": "automated communication analysis" },
-      { "value": "Early", "label": "risk detection before escalations" }
+      { "value": "250+", "label": "manager hours saved in 6 months (team of 8 PMs, 150+ active projects)" },
+      { "value": "100%", "label": "of messages analyzed automatically — no manual chat monitoring by managers" },
+      { "value": "37%", "label": "reduction in escalations through early tactical risk detection in the first 2 months" }
     ]
+  },
+  "testimonials": {
+    "title": "What clients say",
+    "subtitle": "Feedback from service company leaders using Aura.",
+    "cta_note": "Leave a request — we will show you real client results on the demo call.",
+    "items": [
+      {
+        "name": "Olena K.",
+        "role": "Customer Success Director",
+        "company": "Digital agency, 120+ clients",
+        "quote": "Aura gave us the ability to see churn risk 2–3 weeks before the client even raises the issue. We react in time — and we retain them.",
+        "metric": "–40% escalations in 2 months"
+      },
+      {
+        "name": "Dmytro V.",
+        "role": "Head of Operations",
+        "company": "IT outsourcing, 60 active contracts",
+        "quote": "I used to spend 3–4 hours a week listening to calls and reading chats. Now I open the dashboard and in 10 minutes I have a full picture across all teams.",
+        "metric": "–3.5 hrs/week manual monitoring"
+      },
+      {
+        "name": "Maryna B.",
+        "role": "CEO",
+        "company": "B2B SaaS company",
+        "quote": "After implementing Aura, clients started noticing we respond faster. In reality, we just learned to see their mood before it turns negative.",
+        "metric": "Team NPS +18 points per quarter"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Transparent pricing — choose the plan that fits your team size.",
+    "trial": "All plans include a 14-day free trial.",
+    "cta": "Request demo",
+    "plans": [
+      {
+        "name": "Starter",
+        "desc": "For agencies with a small client base",
+        "price": "from $299/mo",
+        "features": ["Up to 30 active clients", "Telegram and Email monitoring", "Project Health Score", "Weekly AI digests", "Email risk alerts"],
+        "highlighted": false
+      },
+      {
+        "name": "Growth",
+        "desc": "For agencies and IT companies scaling up",
+        "price": "from $699/mo",
+        "features": ["Up to 150 active clients", "Telegram, Slack, Email", "Full Risk Management module", "Real-time Telegram alerts", "PM Copilot (AI recommendations)", "Per-PM analytics"],
+        "highlighted": true
+      },
+      {
+        "name": "Enterprise",
+        "desc": "For large service companies and groups",
+        "price": "Price on request",
+        "features": ["Unlimited clients", "All communication channels", "Custom risk models", "Dedicated implementation manager", "SLA and 24/7 support", "On-premise or private cloud deploy"],
+        "highlighted": false
+      }
+    ]
+  },
+  "security": {
+    "title": "Security & Data Privacy",
+    "subtitle": "Your client communications are protected at every level.",
+    "items": [
+      {
+        "icon": "lock",
+        "title": "Data Encryption",
+        "desc": "All data is encrypted at rest (AES-256) and in transit (TLS 1.3). No open transmission channels."
+      },
+      {
+        "icon": "users",
+        "title": "Access Control",
+        "desc": "Role-based access control: each team member sees only the projects and data they are authorized for."
+      },
+      {
+        "icon": "shield",
+        "title": "GDPR Compliance",
+        "desc": "The platform meets GDPR requirements. You have full control over what data is stored and for how long."
+      },
+      {
+        "icon": "eye-off",
+        "title": "Data never trains models",
+        "desc": "Your communications are never used to train AI models. Your data stays yours."
+      }
+    ],
+    "contact": "Questions about security? Write to security@netpeak-aura.com"
   },
   "cta": {
     "title": "See where risks appear in your client communications",

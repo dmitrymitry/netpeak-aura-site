@@ -11,6 +11,9 @@ import Dashboard from "@/components/Dashboard";
 import ForWho from "@/components/ForWho";
 import NPS from "@/components/NPS";
 import Case from "@/components/Case";
+import Testimonials from "@/components/Testimonials";
+import Pricing from "@/components/Pricing";
+import Security from "@/components/Security";
 import Roadmap from "@/components/Roadmap";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -31,6 +34,9 @@ export default function Home() {
       <Dashboard tr={tr} />
       <NPS tr={tr} />
       <Case tr={tr} />
+      <Testimonials tr={tr} />
+      <Pricing tr={tr} />
+      <Security tr={tr} />
       <Roadmap tr={tr} />
       <CTA tr={tr} />
       <Footer tr={tr} />

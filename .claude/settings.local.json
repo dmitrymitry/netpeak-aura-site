@@ -12,7 +12,9 @@
       "Bash(node -e \"console.log\\(require\\(''./node_modules/next/package.json''\\).version\\)\")",
       "Bash(grep '\"\"next\"\"' package.json)",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d[''''packages''''][''''node_modules/next''''][''''version'''']\\)\")",
-      "Bash(npm pkg:*)"
+      "Bash(npm pkg:*)",
+      "Bash(\"/Users/vegas/Desktop/Aura Site/.npmrc\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({k: d[k] for k in [''''roadmap'''',''''case'''']}, ensure_ascii=False, indent=2\\)\\)\")"
     ]
   }
 }

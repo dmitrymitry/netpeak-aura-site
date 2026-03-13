@@ -1,12 +1,14 @@
 interface Props { tr: any }
 
 const STATUS_STYLES: Record<string, string> = {
-  coming: "bg-brand-500/10 text-brand-400 border-brand-500/20",
-  planned: "bg-slate-500/10 text-slate-400 border-slate-500/20",
+  dev:      "bg-green-500/10 text-green-400 border-green-500/20",
+  planned:  "bg-brand-500/10 text-brand-400 border-brand-500/20",
+  research: "bg-slate-500/10 text-slate-400 border-slate-500/20",
 };
 const STATUS_LABEL: Record<string, string> = {
-  coming: "Coming soon",
-  planned: "Planned",
+  dev:      "In development",
+  planned:  "Planned",
+  research: "Research",
 };
 
 export default function Roadmap({ tr }: Props) {
