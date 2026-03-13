@@ -10,12 +10,12 @@ const METRIC_CARDS = [
 ];
 
 const TABLE_ROWS = [
-  { domain: "kievsspectech.com", pm: "Vegas", role: "Catalyst", chat: "Kievsspectech/Netpeak", msgs: 2,  crisk: 100, trisk: 100, sentiment: 35, highlight: true },
-  { domain: "globelink2.eu",     pm: "Vegas", role: "Iton",     chat: "Netpeak <> Globelink.EU | PPC", msgs: 3,  crisk: 33,  trisk: 0,   sentiment: 52 },
-  { domain: "timeshop.com.ua",   pm: "Vegas", role: "Nikkov",   chat: "Timeshop & Netpeak / PPC",      msgs: 4,  crisk: 25,  trisk: 0,   sentiment: 55 },
-  { domain: "beauty-prof.com",   pm: "Vegas", role: "Ruslanivna",chat: "Beauty Prof <> Netpeak | PPC", msgs: 9,  crisk: 11,  trisk: 22,  sentiment: 51 },
-  { domain: "homefood.ua2",      pm: "Vegas", role: "Astra",    chat: "Netpeak | PPC&Media | homefood.ua", msgs: 5, crisk: 0, trisk: 20, sentiment: 52, highlight: true },
-  { domain: "kse.ua",            pm: "Vegas", role: "Gerodot",  chat: "KSE / Media / Performance / Ext",   msgs: 10, crisk: 20, trisk: 0, sentiment: 58 },
+  { domain: "client-alpha.com",  pm: "A. Kovalenko", role: "Catalyst", chat: "Client Alpha / Netpeak | PPC",       msgs: 2,  crisk: 100, trisk: 100, sentiment: 35, highlight: true },
+  { domain: "beta-store.eu",     pm: "M. Bondar",    role: "Lead",     chat: "Netpeak <> Beta Store | Performance", msgs: 3,  crisk: 33,  trisk: 0,   sentiment: 52 },
+  { domain: "domain-3.com.ua",   pm: "O. Savchenko", role: "Senior",   chat: "Domain 3 & Netpeak / PPC",            msgs: 4,  crisk: 25,  trisk: 0,   sentiment: 55 },
+  { domain: "retail-demo.com",   pm: "I. Marchenko", role: "Middle",   chat: "RetailDemo <> Netpeak | Media",       msgs: 9,  crisk: 11,  trisk: 22,  sentiment: 51 },
+  { domain: "domain-5.ua",       pm: "V. Petrenko",  role: "Catalyst", chat: "Netpeak | PPC&Media | Domain 5",      msgs: 5,  crisk: 0,   trisk: 20,  sentiment: 52, highlight: true },
+  { domain: "tech-client.ua",    pm: "D. Lysenko",   role: "Senior",   chat: "TechClient / Media / Performance",    msgs: 10, crisk: 20,  trisk: 0,   sentiment: 58 },
 ];
 
 // Sentiment trend points (Mon–Fri over 2 months, simplified)
@@ -221,10 +221,10 @@ export default function Dashboard({ tr }: Props) {
                   </div>
                   <div className="p-4">
                     <div className="bg-[#1c2733] rounded-xl rounded-tl-sm p-3.5 text-xs space-y-2">
-                      <div className="text-white font-bold text-sm">🔴 Kievs · /Netpeak</div>
+                      <div className="text-white font-bold text-sm">🔴 Client Alpha · /Netpeak</div>
                       <div className="text-slate-300 space-y-0.5">
                         <div>📋 <span className="text-slate-400">Risk category:</span> S Trust / Competence</div>
-                        <div>👤 <span className="text-slate-400">PM –</span> Maksym (Catalyst)</div>
+                        <div>👤 <span className="text-slate-400">PM –</span> A. Kovalenko (Catalyst)</div>
                       </div>
                       <div className="border-t border-white/10 pt-2 text-slate-400">
                         📅 Дата: <span className="text-white">04.03.2026 19:05</span>
@@ -246,7 +246,7 @@ export default function Dashboard({ tr }: Props) {
                         </div>
                         <div className="flex items-center gap-2">
                           <span className="text-brand-400 underline cursor-pointer">🔗 Open Chat</span>
-                          <span className="text-slate-400">👋 @dmytro_ho</span>
+                          <span className="text-slate-400">👋 @pm_handle</span>
                         </div>
                       </div>
                     </div>
@@ -262,9 +262,9 @@ export default function Dashboard({ tr }: Props) {
                 </div>
                 <div className="space-y-2">
                   {[
-                    { project: "Kievsspectech", type: "Trust / Competence", msg: "Клієнт під сумнів компетентність команди", level: "high", sentiment: 20 },
-                    { project: "homefood.ua2",  type: "Response time",     msg: "Avg відповідь > 20хв цього тижня",         level: "medium", sentiment: 52 },
-                    { project: "beauty-prof",   type: "C-risk pattern",    msg: "11% повідомлень містять ризик-сигнали",    level: "medium", sentiment: 51 },
+                    { project: "Client Alpha",  type: "Trust / Competence", msg: "Клієнт під сумнів компетентність команди", level: "high",   sentiment: 20 },
+                    { project: "Domain 5",      type: "Response time",     msg: "Avg відповідь > 20хв цього тижня",         level: "medium", sentiment: 52 },
+                    { project: "Retail Demo",   type: "C-risk pattern",    msg: "11% повідомлень містять ризик-сигнали",    level: "medium", sentiment: 51 },
                   ].map((r, i) => (
                     <div key={i} className={`p-3 rounded-xl border text-xs ${
                       r.level === "high"
