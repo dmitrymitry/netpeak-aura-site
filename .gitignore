@@ -19,3 +19,6 @@ out/
 .DS_Store
 *.pem
 npm-debug.log*
+
+# Claude local config & skills (not part of the project)
+.claude/
