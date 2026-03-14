@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -21,6 +21,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Scroll offset so anchors aren't hidden under fixed navbar */
+section[id],
+div[id="pricing"],
+div[id="features"],
+div[id="roadmap"],
+div[id="cta"] {
+  scroll-margin-top: 72px;
+}
+
 @layer utilities {
   .text-gradient {
     @apply bg-gradient-to-r from-brand-500 to-blue-400 bg-clip-text text-transparent;
@@ -31,4 +40,25 @@ body {
   .section {
     @apply py-20 px-4 max-w-6xl mx-auto;
   }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f1e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a3555;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f6ef7;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid #4f6ef7;
+  outline-offset: 2px;
 }

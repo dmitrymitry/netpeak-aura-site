@@ -2,6 +2,7 @@
   "nav": {
     "product": "Product",
     "features": "Features",
+    "pricing": "Pricing",
     "roadmap": "Roadmap",
     "demo": "Request demo"
   },
@@ -16,7 +17,9 @@
       "Early risk detection",
       "Sentiment monitoring",
       "Response time tracking"
-    ]
+    ],
+    "social_proof": "Already used by 40+ service companies",
+    "gradient_word": "communications"
   },
   "problem": {
     "title": "Why service companies lose control over client communications",

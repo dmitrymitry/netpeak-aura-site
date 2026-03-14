@@ -15,20 +15,26 @@ export default function Pricing({ tr }: Props) {
           <p className="text-slate-400 text-lg">{data.subtitle}</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
+        <div className="grid md:grid-cols-3 gap-6 mb-8 items-start">
           {data.plans.map((plan: any, i: number) => (
             <div
               key={i}
               className={`relative rounded-2xl border p-7 flex flex-col gap-5 transition-all ${
                 plan.highlighted
-                  ? "bg-brand-500/10 border-brand-500/40 shadow-lg shadow-brand-500/10 scale-[1.02]"
-                  : "bg-white/3 border-white/10 hover:border-white/20"
+                  ? "bg-gradient-to-b from-brand-500/15 to-brand-500/5 border-brand-500/50 shadow-xl shadow-brand-500/15 md:scale-[1.04] md:-mt-2"
+                  : "bg-white/3 border-white/10 hover:border-white/20 hover:-translate-y-0.5"
               }`}
             >
+              {/* Popular badge */}
               {plan.highlighted && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-brand-500 text-white text-xs font-semibold rounded-full">
-                  Popular
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-brand-500 to-blue-500 text-white text-xs font-bold rounded-full shadow-lg shadow-brand-500/30">
+                  ⭐ Popular
                 </div>
+              )}
+
+              {/* Glow ring for highlighted */}
+              {plan.highlighted && (
+                <div className="absolute inset-0 rounded-2xl ring-1 ring-brand-500/30 pointer-events-none" />
               )}
 
               <div>
@@ -36,14 +42,19 @@ export default function Pricing({ tr }: Props) {
                 <p className="text-slate-400 text-sm">{plan.desc}</p>
               </div>
 
-              <div className={`text-2xl font-bold ${plan.highlighted ? "text-brand-400" : "text-white"}`}>
-                {plan.price}
+              <div>
+                <div className={`text-3xl font-bold ${plan.highlighted ? "text-white" : "text-white"}`}>
+                  {plan.price}
+                </div>
+                {plan.highlighted && (
+                  <p className="text-brand-400 text-xs mt-1">Most popular for growing teams</p>
+                )}
               </div>
 
               <ul className="space-y-2.5 flex-1">
                 {plan.features.map((f: string, j: number) => (
-                  <li key={j} className="flex items-start gap-2 text-sm text-slate-300">
-                    <span className="text-green-400 mt-0.5 flex-shrink-0">✓</span>
+                  <li key={j} className="flex items-start gap-2.5 text-sm text-slate-300">
+                    <span className={`mt-0.5 flex-shrink-0 font-bold ${plan.highlighted ? "text-brand-400" : "text-green-400"}`}>✓</span>
                     {f}
                   </li>
                 ))}
@@ -51,10 +62,10 @@ export default function Pricing({ tr }: Props) {
 
               <a
                 href="#cta"
-                className={`block text-center py-2.5 rounded-xl font-medium text-sm transition-colors ${
+                className={`block text-center py-3 rounded-xl font-semibold text-sm transition-all ${
                   plan.highlighted
-                    ? "bg-brand-500 hover:bg-brand-600 text-white"
-                    : "border border-white/20 hover:border-white/40 text-white"
+                    ? "bg-brand-500 hover:bg-brand-600 text-white shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50"
+                    : "border border-white/15 hover:border-white/30 text-white hover:bg-white/5"
                 }`}
               >
                 {data.cta}
